@@ -1,4 +1,4 @@
-msg_Update	Thank you for updating Retro Bowl!##The main new feature is kickoffs and being able to select your kick returner. In addition to that are the usual tweaks and fixes.##Thank you for your continued support!##- Simon
+msg_Update	Thank you for updating Retro Bowl!##You are now able to play exhibition games! Choose two teams for a one-off game and even pass n' play to compete against a fellow human!##I hope you are still enjoying Retro Bowl and thank you for your continued support.##- Simon
 ui_NewStarGames	New Star Games
 ui_Back	Back
 ui_Home	Home
@@ -71,8 +71,9 @@ comm_stage_DrivePass4	The quarterback throws it
 comm_stage_DriveHailMary0	It's a hail mary throw
 comm_stage_DriveHailMary1	It's a huge throw
 comm_stage_DriveHailMary2	The quarterback airs it out
-comm_stage_Turnover1	It's a fumble!
-comm_stage_Turnover2	Interception!
+comm_stage_Turnover_Fumble	It's a fumble!
+comm_stage_Turnover_Interception	Interception!
+comm_stage_Turnover_Sack	The quarterback is sacked!
 comm_stage_TurnoverHuman	$teamname turn it over
 comm_stage_TurnoverHuman4th	$teamname turn it over on 4th down
 comm_stage_Touchdown	$teamname score!
@@ -88,8 +89,9 @@ comm_stage_end_quarter2	End of 1st half
 comm_stage_end_quarter3	End of 3rd quarter
 comm_stage_end_quarter4	Game over
 comm_stage_overtime	Overtime!
-comm_stage_overtime_over	Game over
+comm_stage_overtime_over	End of overtime
 comm_stage_2pt_attempt	They go for 2 points...
+comm_stage_2pt_attemptQB	$teamname go for 2 points...
 comm_stage_2pt_missed	But get stopped!
 comm_stage_2pt_scored	And score!
 comm_stage_Turnover_Tackle1	[$pos] $playername makes a great tackle!
@@ -272,6 +274,7 @@ position_DB	Defensive Back
 pos_STAFF_HC	HC
 pos_STAFF_DF	DF
 pos_STAFF_OF	OF
+position_STAFF_HC	Head Coach
 position_STAFF_DF	Defensive Coordinator
 position_STAFF_OF	Offensive Coordinator
 ui_Roster	Roster
@@ -584,7 +587,6 @@ ui_LastName	Last Name
 ui_NewCareer	New Career
 news_NewCareer	With just $num $weeks left in the regular season $teamname have appointed $coachname as their new head coach.##$lname has worked at the college level for several years and was excelling as the head coach of $randomcollegename before taking the reins at $teamname.
 ui_StartWithFave	Start with favorite team?
-info_StartWithFave	Retro Bowl is a game all about building a legacy. If you choose to start with your favorite team that's fine but the story of your career will be a simple one.##Why not start out at a low ranked team and prove yourself as a head coach before receiving that dream job offer from your favorite team?
 msg_Intro_1	Welcome to $teamname!##This is your home screen. You can tap on the division table to view divisions and the schedule.##When you are ready tap the F.OFFICE button.
 msg_Intro_1_gp	Welcome to $teamname!##This is your home screen. You can use ² or the - Button to view divisions and the schedule.##When you are ready highlight the F.OFFICE button and press ¹.
 msg_Intro_1_gp_xb	Welcome to $teamname!##This is your home screen. You can use ² to view divisions and the schedule.##When you are ready highlight the F.OFFICE button and press º.
@@ -605,8 +607,8 @@ msg_Intro_RunningBrowser	Nice! At the start of each play you can hand the ball o
 msg_Intro_Kicking	Great! Diving can help you reach for a first down or touchdown. It also protects against a fumble!##Finally, kicking. Two well timed taps and the ball will fly through the uprights!
 msg_Intro_KickingBrowser	Finally, kicking. Two well timed clicks and the ball will fly through the uprights!
 msg_Intro_SuccessPass	Excellent! This time the quarterback will drop back with the ball slightly...
-msg_Intro_SuccessRun	Well done! You can also run with the the quarterback. You do this by attempting to throw the ball backwards.##Once he is running you can swipe forwards to dive.
-msg_Intro_SuccessRunBrowser	Well done! You can also run with the the quarterback. You do this by attempting to throw the ball backwards.##Once he is running use A or D to slow-up or dive!
+msg_Intro_SuccessRun	Well done! You can also run with the quarterback. You do this by attempting to throw the ball backwards.##Once he is running you can swipe forwards to dive.
+msg_Intro_SuccessRunBrowser	Well done! You can also run with the quarterback. You do this by attempting to throw the ball backwards.##Once he is running use A or D to slow-up or dive!
 msg_Intro_SuccessKick	Nice kick! Remember, the goal posts are the same width as the hash marks on the field. You can use the faint triangle on the ground as a guide.##Let's try one a bit further out...
 ui_Ok	OK
 ui_Skip	Skip
@@ -685,7 +687,7 @@ msg_ChooseNewTeam	Do you want to take charge of $teamname?
 news_NewJob1	$oldteamname head coach $yourname has decided it is time to move on and takes charge of $newteamname. The existing coaching staff have all been released.
 news_NewJob2	$yourname has called it a day at $oldteamname and takes on a new challenge as head coach of $newteamname. The previous co-ordinators have decided to move on.
 news_NewJob3	$oldteamname fans may be in shock today as $yourname walks out on them to become the new head coach of $newteamname. Assessing the squad and recruiting new co-ordinators will be a priority upon arrival.
-news_FavoriteTeam1	After taking on the head coach role at $newteamname, $yourlastname declared that is a dream come true.
+news_FavoriteTeam1	After taking on the head coach role at $newteamname, $yourlastname declared that it is a dream come true.
 news_FavoriteTeam2	$yourlastname's allegiance to $newteamname has been well documented and the move won't be a surprise to many.
 news_FavoriteTeam3	Rumours of the move have been circulating for some time, with many believing the new role to be $yourlastname's lifelong ambition.
 dilemma_Owner1	The owner has invited you to a board meeting. It clashes with a media function.-choice_MeetOwner-choice_MeetMedia
@@ -778,6 +780,8 @@ ui_Close	Close
 btn_RestorePurchases	Restore#Purchases
 ui_Connecting	Connecting...
 ui_FavouriteTeam	Favorite Team
+msg_Welcome_CO	Welcome to College Bowl!##You are about to start your first season as the head coach of a college football team.##The path to success is an arduous one but if you believe in yourself and can inspire your team then glory awaits!#
+
 msg_Welcome	Welcome to Retro Bowl!##You are about to start your first season as the head coach of a pro football team.##The path to success is an arduous one but if you believe in yourself and can inspire your team then glory awaits!#
 msg_LimitedVersion	*** Limited Version - $num games remaining ***
 ui_Tip	Tip
@@ -897,7 +901,7 @@ ui_CopySlot3	Copy Teams#From Save 3
 ui_CopySlot4	Copy Teams#From Save 4
 ui_CopySlot5	Copy Teams#From Save 5
 msg_CopyUniforms	Copy the team names and uniform colors from slot $num?
-msg_UnlimitedFeatures	Upgrade to the unlimited version now!##* Get 25 coaching credits *#* Edit team names and uniforms *#* Edit player names *#* Snow and rain weather effects *#* Video replays *#* Support development! *
+msg_UnlimitedFeatures	Upgrade to the unlimited version now!##* Get 25 coaching credits *#* Edit team names and uniforms *#* Edit player names *#* Snow and rain weather effects *#* Kickoff Returns *#* Support development! *
 ui_Upgrade	Upgrade
 ui_Difficulty	Difficulty
 ui_Difficulty0	Dynamic
@@ -917,7 +921,7 @@ ui_ReturnToLoad	Return To#Load Screen
 ui_PlayerHallOfFame	Player Hall of Fame
 msg_RemoveFromHallOfFame	Do you want to remove this player from the Hall of Fame? This cannot be undone.
 ui_Remove	Remove
-ui_PlayerHallOfFameEmpty	To put players in your Hall of Fame you need to tag them in the top-right corner of their profile page.
+ui_PlayerHallOfFameEmpty	To put players in your Hall of Fame you need to tag them in the top-left corner of their profile page.
 msg_HofListTooBig	There is no room in the Hall of Fame! Please remove a player before tagging a new one.
 msg_TradeAwayRookie	Warning! Trading a recently signed player has a negative impact on team morale and your fan relationship!
 ui_RetroBowlWinners	Retro Bowl Winners
@@ -1012,7 +1016,7 @@ msg_Watermark	$teamname has a record of $record.
 msg_WatermarkHighlight	The highlight of the season was a win of $result against $oppname.
 msg_WatermarkRestarts	Their season has been tainted by $num false starts.
 ui_restarts	restarts
-favorite_DoingWell	With a current record of $record, the $teamname head coach position in jeopardy. While the owner has given no hint regarding his preferred choice many fans have been quick to name $yourname as the ideal candidate.
+favorite_DoingWell	With a current record of $record, the $teamname head coach position is in jeopardy. While the owner has given no hint regarding his preferred choice many fans have been quick to name $yourname as the ideal candidate.
 favorite_DoingWellReturn	Fans of $favteamname, currently $record, have been calling for the return of $bossname as head coach. The $favteamname owner has refused to comment on the situation.
 favorite_DoingPoorly	It's no secret that $favteamname owner will be looking for a new head coach at the end of the season but it seems unlikely that $yourname will be amongst the candidates.
 msg_SalaryCheckRoster	You need to reduce your roster to 10 players before you can reduce the salary cap.
@@ -1131,7 +1135,7 @@ msg_Intro_PassingGamepad	First up, passing.##Use the LEFT STICK to aim your pass
 msg_Intro_RunningGamepad	Nice! At the start of each play you have the option to hand the ball off to your running back by pressing the HAND OFF button.##Your running back will take the ball and run automatically. You can use the LEFT STICK or JUKE controls to affect his direction.
 msg_Intro_KickingGamepad	Great! Diving can help you reach for a first down or touchdown. It also protects against a fumble!##Finally, kicking. First set the power, then the direction.
 msg_Intro_SuccessPassGamepad	Excellent! This time the quarterback will drop back with the ball slightly...
-msg_Intro_SuccessRunGamepad	You can also run with the the quarterback.##Aim a throw then press the SCRAMBLE button.##While running use the RIGHT STICK or DIVE button to dive with the ball.
+msg_Intro_SuccessRunGamepad	You can also run with the quarterback.##Aim a throw then press the SCRAMBLE button.##While running use the RIGHT STICK or DIVE button to dive with the ball.
 ui_BuyMerch	Retro Bowl#T-Shirts
 ui_RestoreSave	Restore Save Data
 match_TouchBack	Touchback
@@ -1142,7 +1146,7 @@ ui_NewStarGames	New Star Games
 btn_RecordBook	Record#Book
 btn_Leagues	Retro Bowl#Leagues
 poki_CoinBoostMsg	Would you like to double your coaching credits by watching an ad?
-info_UnlimitedVersion	#Unlocks Team Editor,#Weather and Replays#Coaching Credits x 25
+info_UnlimitedVersion	#Unlocks Team Editor,#Weather and Kick Returns#Coaching Credits x 25
 ui_View	View
 ui_Sound	Sound
 ui_AimingInvert	Controller#Throwing
@@ -1229,8 +1233,8 @@ msg_Intro_PassingFailGamepad	Use the LEFT STICK to aim your pass, then press the
 msg_Intro_RunningFail	Hand the ball off to your Running Back by tapping the blue circle.##Swipe up or down while running to side-step or swipe back to slow down.
 msg_Intro_RunningFailBrowser	Hand the ball off to your Running Back by clicking on the blue circle.##Use W or S while running to perform a side-step.
 msg_Intro_RunningFailGamepad	Hand the ball off to your Running Back by pressing the HAND OFF button.##Use the LEFT STICK or JUKE controls to affect his direction.
-msg_Intro_ScrambleFail	To run with the the quarterback throw the ball backwards.##Once he is running swipe forwards to dive.
-msg_Intro_ScrambleFailBrowser	To run with the the quarterback throw the ball backwards.##Once he is running use A or D to slow-up or dive!
+msg_Intro_ScrambleFail	To run with the quarterback throw the ball backwards.##Once he is running swipe forwards to dive.
+msg_Intro_ScrambleFailBrowser	To run with the quarterback throw the ball backwards.##Once he is running use A or D to slow-up or dive!
 msg_Intro_ScrambleFailGamepad	Aim a throw then press the SCRAMBLE button to run with the quarterback.##While running use the RIGHT STICK or DIVE button to dive with the ball.
 msg_Intro_KickingFail	Set the power as high as you can then aim down the center of the field.
 msg_Intro_KickingFailBrowser	Set the power as high as you can then aim down the center of the field.
@@ -1266,3 +1270,149 @@ ui_Review	Review
 msg_TagMessageHOF	This tag allows you to select a player for your franchise Hall of Fame. His stats will be recorded even after he leaves the team or retires.
 msg_TagMessageKR	WRs, RBs and DBs can be selected as a Kick Returner. They will catch and return the ball from kick offs.##You can only assign one kick returner.
 msg_KickReturns	You can now choose a player to return kickoffs!##Simply head over to the player profile of any RB, WR or DB and select the green tag in the top-left corner of the screen.
+msg_TouchBack	TOUCHBACKS#If your kick returner receives a kickoff in the end zone you can attempt a DIVE to initiate a touchback. You will then start your drive from the 25 yard line.
+btn_KickReturns	Kickoff#Returns
+ui_LongKickReturn	Longest kick return
+ui_MostReturnYardsGame	Most return yards game
+ui_MostReturnYardsSeason	Most return yards season
+ui_MostReturnYardsCareer	Most return yards career
+ui_stat_return_yards	Ret Yds
+ui_stat_return_tds	Ret TDs
+ui_stat_return_longest	Ret Lng
+msg_WelcomeQB	Welcome to Retro Bowl!##You are about to start your first season with a pro football team but first you must choose between FRANCHISE MODE and QB MODE.##In FRANCHISE MODE you will draft players, manage the team and control the players on game day.##In QB MODE you start your career as a newly drafted quarterback. You will need to manage your finances and relationships, and will perform the quarterback role during games.
+info_StartWithFave	Retro Bowl is a game all about building a legacy. If you choose to start with your favorite team that's fine but the story of your career will be a simple one.##Why not start out at a low ranked team and prove yourself before receiving that dream offer from your favorite team?
+btn_QB_Mode	QB Mode
+btn_FranchiseMode	Franchise#Mode
+news_NewCareerQB	With overall pick number $num (round $round) $teamname have drafted quarterback $playername from $randomcollegename.##Head coach $coachname has said he expects $lname to start the season as QB1 and has very high hopes of the player.
+msg_WelcomeQBCO	Welcome to Retro Bowl!##You are about to start your first season with a pro football team but first you must choose between FRANCHISE MODE, QB or COLLEGE MODES.##In FRANCHISE MODE you will draft players, manage the team and control the players on game day.##In QB MODE you start your career as a newly drafted quarterback. You will need to manage your finances and relationships, and will perform the quarterback role during games.##In COLLEGE MODE you TBD
+btn_CO_Mode	College#Mode
+ui_Face	Face
+ui_StarRating	Star Rating
+ui_Coach	Coach
+ui_Life	Life
+ui_Happiness	Happiness
+ui_Relationships	Relationships
+ui_Energy	Energy
+ui_Lifestyle	Lifestyle
+ui_Buy	Buy
+ui_BuyNRG	Buy#NRG
+ui_Drink	Drink
+ui_DrinkNRG	Drink#NRG
+ui_NRG	NRG
+ui_Meet	Meet
+ui_Training	Training
+msg_MeetTeammate	Do you want to meet up with $teammate to increase his happiness?##Your condition will drop to $num%.
+msg_NotEnoughCondition	Your condition is too low to do this right now.
+msg_TeammateMoraleTooHigh	This teammate does not need a morale boost.
+ui_FanHappiness	Fan Happiness
+ui_TeamCondition	Team Condition
+ui_Performance	Performance
+ui_Finances	Finances
+ui_GameRating	Game Rating
+ui_Salary	Salary
+ui_TouchdownBonus	Touchdown Bonus
+ui_Shopping	Shopping
+ui_Items	Items
+ui_Vehicles	Vehicles
+ui_Property	Property
+msg_NotEnoughCash	You cannot afford this.
+msg_ConfirmPurchase	Do you want to buy this item for $price bux?##$itemname##
+msg_ItemDegraded	One of your purchased items needs renewing:##$itemname##
+ui_Casino	Casino
+msg_benched_relationship	Coach relationship $num%
+msg_benched_energy	Energy $num%
+ui_DetailsNotFave	Note: You will not start at your favorite team.
+ui_Negotiate	Negotiate
+ui_Expires	Expires
+ui_contract_expires	End of year $year
+ui_Game	Game
+ui_CurrentContract	Current Contract
+ui_NewContract	New Contract
+contract_Length	Length
+ui_Accept	Accept
+ui_Reject	Reject
+ui_Failed	Failed
+ui_Success	Success
+ui_Request	Request
+instrucs_Negotiate	Guess higher or lower!#Numbers range from 1 to 11
+news_ContractExtended	$age year old $playername has signed a contract extension with $teamname.
+news_ContractNewTeam	$age year old $playername has signed with $teamname.
+news_ContractNewTeamFavorite	$age year old $playername has signed with $teamname! It is well known that $teamname is a team very close to $playerlastname's heart.
+msg_JobOffers_QB_1	Your raw talent is making waves in the league. A few teams are interested in signing you.
+msg_JobOffers_QB_2	Your reputation is growing! The following teams are interested in signing you.
+msg_JobOffers_QB_3	Your reputation is widely acknowledged within the game and there are a number of teams interested in making you their franchise quarterback.
+msg_JobOffers_QB_4	Your wealth of experience and knowledge of the game make you the most highly sought after quarterback in the league. Teams are queuing up to sign you.
+
+msg_NegotiateNo_TooLong	The owner does not want to extend your contract this season.
+msg_NegotiateNo_TooEarly	The owner does not want to negotiate a new contract this early in the season.
+msg_AgentRequestContract	Your agent informs you that $teamname would be will to discuss a contract extension.
+ui_Freshman_Short	Fr
+ui_Sophomore_Short	So
+ui_Junior_Short	Jr
+ui_Senior_Short	Sr
+ui_Freshman	Freshman
+ui_Sophomore	Sophomore
+ui_Junior	Junior
+ui_Senior	Senior
+ui_GPA	GPA
+ui_Suspended	Suspended
+ui_PlayerSuspended	Player Suspended	
+msg_suspended	$playername has been placed on Academic Suspension.##Suspended players will be unavailable for games while they are studying to improve their GPA.
+ui_Version_Mode	Franchise
+ui_CO_Label	College
+ui_QB_Label	Quarterback
+ui_FR_Label	Franchise
+ui_Recruitment_Credits	RECRUITMENT CREDITS
+ui_increase	Increase
+ui_wallet	Wallet
+ui_next	Next
+ui_Info	Info
+btn_GenerateCharacter	Random#Character
+msg_NeedBossHead	You need to select a face for yourself.##Tap on the head coach card to choose an image.
+info_HeadCoach	This is you! Your morale is affected by team morale and fan approval. Your star rating will increase with victories!
+ui_RetroBowlRecord	Retro Bowl Record
+tla_RBMVP	RBMVP
+msg_RetroBowlMVPWinner	$playername was named the Retro Bowl MVP!
+btn_Achievements	Achieve-#ments
+ui_RetroBowlWinners	Retro Bowl Winners
+match_SkipTime	Skip Time
+info_Skill_Buff	Players receive a +1 skill buff if morale is exceptional.
+info_Strength_Buff	Players receive a +1 strength buff if their morale is angry or toxic.
+info_Speed_Buff	Players receive a +1 speed buff if they have 100% condition.
+info_Stamina_Buff	Toxic players receive a +1 stamina buff.
+match_GoForIt	Go For It
+ui_Sim	Sim
+ui_SimRecord	Sim Game Record
+ui_Seasons	Seasons
+ui_FullSeasons	Full Seasons
+ui_SeasonsNoSim	Seasons (no sim games)
+ui_TotalGames	Games Played
+ui_SimGames	Sim Games
+short_STAFF_DF	DF Coord
+short_STAFF_OF	OF Coord
+comm_stage_team_win	Overtime win!
+comm_stage_overtime_loss	Overtime loss!
+ui_stat_xpa	Xpa
+ui_stat_xpm	Xpm
+btn_GoFor1	Go for 1pt
+btn_GoFor2	Go for 2pts
+head2head_Player	Player
+ui_ExhibitionGame	Exhibition Game
+btn_ExhibitionGame	Exhibition#Game
+btn_ChangeTeam	Change#Team
+btn_WeatherRandom	Random
+btn_WeatherSun	Sun
+btn_WeatherRain	Rain
+btn_WeatherSnow	Snow
+ui_Takecontrol	Take Control
+msg_QuitExhibition	Do you want to quit this game?
+
+ui_Controllers	Controllers
+ui_Controllers_Single	Single / Pass & Play
+ui_Controllers_Double	2 Controllers#(1 per player)
+ui_AssignController	Assign#controllers
+msg_TouchscreenDeactivation	Touchscreen controls will be deactivated when each player is playing with a separate controller. You will need to assign two controllers to continue.
+msg_TouchscreenReactivation	You can now use any controller to play the game, and Touch screen controls are available again in handheld mode.
+msg_LostController	One or more controllers have been deactivated.
+
+ui_Quit	Quit
